@@ -61,11 +61,9 @@ public class Maze {
 		Cell current = this.maze[this.playerRow][this.playerColumn];
 		
 		if (this.invalid(this.playerRow + rowOffset, this.playerColumn + columnOffset) == null) {
-			System.out.println("Space does not exist");
 			return;
 		}
 		
-		//fix this and then complete maze finished logic
 		if ((direction == 0 && current.isNorthWall()) ||
 				(direction == 1 && current.isWestWall()) ||
 				(direction == 2 && current.isEastWall()) ||
